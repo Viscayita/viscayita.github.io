@@ -49,3 +49,4 @@ de:{serie:"Serie",about:"Über mich",process:"Prozess",contact:"Kontakt",kicker:
 function setLang(l){document.documentElement.lang=l;document.querySelectorAll("[data-k]").forEach(e=>{let k=e.dataset.k;if(T[l][k])e.textContent=T[l][k]});document.querySelectorAll("[data-l]").forEach(b=>b.classList.toggle("active",b.dataset.l===l));localStorage.setItem("lang",l)}
 document.querySelectorAll("[data-l]").forEach(b=>b.onclick=()=>setLang(b.dataset.l));setLang(localStorage.getItem("lang")||"es");
 </script></body></html>
+<!-- Actualización de la galería -->
